@@ -44,4 +44,15 @@ describe("Roman Numerals", () => {
     // Assert
     expect(actualResult).toEqual(expectedResult);
   });
+
+  it(`it should return "VIII", when receive "8"`, () => {
+    // Arrange
+    const expectedResult = "VIII";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(8);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
 });
