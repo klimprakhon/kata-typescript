@@ -1,0 +1,9 @@
+# Node
+node_modules/
+npm-debug.log
+pnpm-lock.yaml
+
+
+coverage/
+
+.DS_Store
