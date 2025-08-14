@@ -33,4 +33,15 @@ describe("Roman Numerals", () => {
     // Assert
     expect(actualResult).toEqual(expectedResult);
   });
+
+  it(`it should return "V", when receive "5"`, () => {
+    // Arrange
+    const expectedResult = "V";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(4);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
 });
