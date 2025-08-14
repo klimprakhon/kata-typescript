@@ -39,7 +39,7 @@ describe("Roman Numerals", () => {
     const expectedResult = "V";
 
     // Act
-    const actualResult: string = convertToRomanNumerals(4);
+    const actualResult: string = convertToRomanNumerals(5);
 
     // Assert
     expect(actualResult).toEqual(expectedResult);
