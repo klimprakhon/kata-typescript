@@ -1,22 +1,32 @@
 function convertToRomanNumerals(arabicNumber: number) {
+  let remainValue = arabicNumber;
   let resultRomanNumber = "";
-  let roundToRepeatRomanNumberOne = arabicNumber;
 
   const romanNumberOne: string = "I";
   const romanNumberFive: string = "V";
+  const romanNumberTen: string = "X";
 
-  if (arabicNumber === 4) return "IV";
-  if (arabicNumber === 9) return "IX";
-  if (arabicNumber === 10) return "X";
-
-  if (arabicNumber >= 5) {
-    roundToRepeatRomanNumberOne = arabicNumber - 5;
-    resultRomanNumber = romanNumberFive;
+  if (remainValue >= 10) {
+    remainValue -= 10;
+    resultRomanNumber += romanNumberTen;
   }
 
-  const repeatedOneRomanNumbers = romanNumberOne.repeat(
-    roundToRepeatRomanNumberOne
-  );
+  if (remainValue === 9) {
+    remainValue -= 9;
+    resultRomanNumber += "IX";
+  }
+
+  if (remainValue >= 5) {
+    remainValue -= 5;
+    resultRomanNumber += romanNumberFive;
+  }
+
+  if (remainValue === 4) {
+    remainValue -= 4;
+    resultRomanNumber += "IV";
+  }
+
+  const repeatedOneRomanNumbers = romanNumberOne.repeat(remainValue);
   return resultRomanNumber + repeatedOneRomanNumbers;
 }
 
