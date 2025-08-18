@@ -1,4 +1,7 @@
 function convertToRomanNumerals(arabicNumber: number) {
+  let resultRomanNumber = "";
+  let roundToRepeatRomanNumberOne = arabicNumber;
+
   const romanNumberOne: string = "I";
   const romanNumberFive: string = "V";
 
@@ -7,12 +10,14 @@ function convertToRomanNumerals(arabicNumber: number) {
   if (arabicNumber === 10) return "X";
 
   if (arabicNumber >= 5) {
-    const roundToRepeat = arabicNumber - 5;
-    const repeatedOneRomanNumbers = romanNumberOne.repeat(roundToRepeat);
-    return romanNumberFive + repeatedOneRomanNumbers;
+    roundToRepeatRomanNumberOne = arabicNumber - 5;
+    resultRomanNumber = romanNumberFive;
   }
 
-  return romanNumberOne.repeat(arabicNumber);
+  const repeatedOneRomanNumbers = romanNumberOne.repeat(
+    roundToRepeatRomanNumberOne
+  );
+  return resultRomanNumber + repeatedOneRomanNumbers;
 }
 
 export default convertToRomanNumerals;
