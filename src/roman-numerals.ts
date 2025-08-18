@@ -3,6 +3,7 @@ function convertToRomanNumerals(arabicNumber: number) {
   const romanNumberFive: string = "V";
 
   if (arabicNumber === 4) return "IV";
+  if (arabicNumber === 9) return "IX";
 
   if (arabicNumber >= 5) {
     const roundToRepeat = arabicNumber - 5;
