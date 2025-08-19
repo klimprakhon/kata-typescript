@@ -26,8 +26,13 @@ function convertToRomanNumerals(arabicNumber: number) {
     resultRomanNumber += "IV";
   }
 
-  const repeatedOneRomanNumbers = romanNumberOne.repeat(remainValue);
-  return resultRomanNumber + repeatedOneRomanNumbers;
+  for (let i = 0; i < remainValue; i++) {
+    const repeatedOneRomanNumbers = romanNumberOne.repeat(remainValue);
+    resultRomanNumber += repeatedOneRomanNumbers;
+    remainValue -= remainValue;
+  }
+
+  return resultRomanNumber;
 }
 
 export default convertToRomanNumerals;
