@@ -6,9 +6,9 @@ function convertToRomanNumerals(arabicNumber: number) {
   const romanNumberFive: string = "V";
   const romanNumberTen: string = "X";
 
-  if (remainValue >= 10) {
-    remainValue -= 10;
+  while (remainValue >= 10) {
     resultRomanNumber += romanNumberTen;
+    remainValue -= 10;
   }
 
   if (remainValue === 9) {
