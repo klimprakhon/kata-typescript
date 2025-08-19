@@ -132,4 +132,26 @@ describe("Roman Numerals", () => {
     // Assert
     expect(actualResult).toEqual(expectedResult);
   });
+
+  it(`it should return "XXIV", when receive "24"`, () => {
+    // Arrange
+    const expectedResult = "XXIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(24);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XXIX", when receive "29"`, () => {
+    // Arrange
+    const expectedResult = "XXIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(29);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
 });
