@@ -5,8 +5,21 @@ function convertToRomanNumerals(arabicNumber: number) {
   const romanNumberOne: string = "I";
   const romanNumberFive: string = "V";
   const romanNumberTen: string = "X";
+  const romanNumberFifty: string = "L";
 
   while (remainValue > 0) {
+    if (remainValue >= 50) {
+      resultRomanNumber += romanNumberFifty;
+      remainValue -= 50;
+      continue;
+    }
+
+    if (remainValue === 40) {
+      resultRomanNumber += "XL";
+      remainValue -= 40;
+      continue;
+    }
+
     if (remainValue >= 10) {
       resultRomanNumber += romanNumberTen;
       remainValue -= 10;
