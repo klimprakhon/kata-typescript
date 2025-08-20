@@ -19,6 +19,30 @@ function convertToRomanNumerals(arabicNumber: number) {
   };
 
   while (remainValue > 0) {
+    if (remainValue >= 1000) {
+      resultRomanNumber += romanNumerals[1000];
+      remainValue -= 1000;
+      continue;
+    }
+
+    if (remainValue >= 900) {
+      resultRomanNumber += romanNumerals[900];
+      remainValue -= 900;
+      continue;
+    }
+
+    if (remainValue >= 500) {
+      resultRomanNumber += romanNumerals[500];
+      remainValue -= 500;
+      continue;
+    }
+
+    if (remainValue >= 400) {
+      resultRomanNumber += romanNumerals[400];
+      remainValue -= 400;
+      continue;
+    }
+
     if (remainValue >= 100) {
       resultRomanNumber += romanNumerals[100];
       remainValue -= 100;
@@ -67,11 +91,12 @@ function convertToRomanNumerals(arabicNumber: number) {
       continue;
     }
 
-    const repeatedOneRomanNumbers = romanNumerals[1].repeat(remainValue);
-    resultRomanNumber += repeatedOneRomanNumbers;
-    remainValue -= remainValue;
+    if (remainValue >= 1) {
+      resultRomanNumber += romanNumerals[1];
+      remainValue -= 1;
+      continue;
+    }
   }
-
   return resultRomanNumber;
 }
 
