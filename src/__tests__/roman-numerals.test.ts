@@ -154,4 +154,59 @@ describe("Roman Numerals", () => {
     // Assert
     expect(actualResult).toEqual(expectedResult);
   });
+
+  it(`it should return "XL", when receive "40"`, () => {
+    // Arrange
+    const expectedResult = "XL";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(40);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "L", when receive "50"`, () => {
+    // Arrange
+    const expectedResult = "L";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(50);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "LIX", when receive "59"`, () => {
+    // Arrange
+    const expectedResult = "LIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(59);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "LX", when receive "60"`, () => {
+    // Arrange
+    const expectedResult = "LX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(60);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "LXXIV", when receive "74"`, () => {
+    // Arrange
+    const expectedResult = "LXXIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(74);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
 });
