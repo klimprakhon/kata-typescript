@@ -10,16 +10,34 @@ function convertToRomanNumerals(arabicNumber: number) {
     10: "X",
     40: "XL",
     50: "L",
+    90: "XC",
+    100: "C",
+    400: "CD",
+    500: "D",
+    900: "CM",
+    1000: "M",
   };
 
   while (remainValue > 0) {
+    if (remainValue >= 100) {
+      resultRomanNumber += romanNumerals[100];
+      remainValue -= 100;
+      continue;
+    }
+
+    if (remainValue >= 90) {
+      resultRomanNumber += romanNumerals[90];
+      remainValue -= 90;
+      continue;
+    }
+
     if (remainValue >= 50) {
       resultRomanNumber += romanNumerals[50];
       remainValue -= 50;
       continue;
     }
 
-    if (remainValue === 40) {
+    if (remainValue >= 40) {
       resultRomanNumber += romanNumerals[40];
       remainValue -= 40;
       continue;
@@ -31,7 +49,7 @@ function convertToRomanNumerals(arabicNumber: number) {
       continue;
     }
 
-    if (remainValue === 9) {
+    if (remainValue >= 9) {
       resultRomanNumber += romanNumerals[9];
       remainValue -= 9;
       continue;
@@ -43,7 +61,7 @@ function convertToRomanNumerals(arabicNumber: number) {
       continue;
     }
 
-    if (remainValue === 4) {
+    if (remainValue >= 4) {
       resultRomanNumber += romanNumerals[4];
       remainValue -= 4;
       continue;
