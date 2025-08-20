@@ -3,8 +3,11 @@ function convertToRomanNumerals(arabicNumber: number) {
   let resultRomanNumber = "";
 
   const romanNumberOne: string = "I";
+  const romanNumberFour: string = "IV";
   const romanNumberFive: string = "V";
+  const romanNumberNine: string = "IX";
   const romanNumberTen: string = "X";
+  const romanNumberForty: string = "XL";
   const romanNumberFifty: string = "L";
 
   while (remainValue > 0) {
@@ -15,7 +18,7 @@ function convertToRomanNumerals(arabicNumber: number) {
     }
 
     if (remainValue === 40) {
-      resultRomanNumber += "XL";
+      resultRomanNumber += romanNumberForty;
       remainValue -= 40;
       continue;
     }
@@ -27,7 +30,7 @@ function convertToRomanNumerals(arabicNumber: number) {
     }
 
     if (remainValue === 9) {
-      resultRomanNumber += "IX";
+      resultRomanNumber += romanNumberNine;
       remainValue -= 9;
       continue;
     }
@@ -39,7 +42,7 @@ function convertToRomanNumerals(arabicNumber: number) {
     }
 
     if (remainValue === 4) {
-      resultRomanNumber += "IV";
+      resultRomanNumber += romanNumberFour;
       remainValue -= 4;
       continue;
     }
