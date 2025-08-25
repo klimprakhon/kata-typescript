@@ -1,0 +1,421 @@
+import convertToRomanNumerals from "../src/roman-numerals";
+
+describe("Roman Numerals", () => {
+  it(`it should return "I", when receive "1"`, () => {
+    // Arrange
+    const expectedResult = "I";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(1);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "III", when receive "3"`, () => {
+    // Arrange
+    const expectedResult = "III";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(3);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "IV", when receive "4"`, () => {
+    // Arrange
+    const expectedResult = "IV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(4);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "V", when receive "5"`, () => {
+    // Arrange
+    const expectedResult = "V";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(5);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "VIII", when receive "8"`, () => {
+    // Arrange
+    const expectedResult = "VIII";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(8);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "IX", when receive "9"`, () => {
+    // Arrange
+    const expectedResult = "IX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(9);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "X", when receive "10"`, () => {
+    // Arrange
+    const expectedResult = "X";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(10);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XIII", when receive "13"`, () => {
+    // Arrange
+    const expectedResult = "XIII";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(13);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XIV", when receive "14"`, () => {
+    // Arrange
+    const expectedResult = "XIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(14);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XV", when receive "15"`, () => {
+    // Arrange
+    const expectedResult = "XV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(15);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XIX", when receive "19"`, () => {
+    // Arrange
+    const expectedResult = "XIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(19);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XX", when receive "20"`, () => {
+    // Arrange
+    const expectedResult = "XX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(20);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XXIV", when receive "24"`, () => {
+    // Arrange
+    const expectedResult = "XXIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(24);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XXIX", when receive "29"`, () => {
+    // Arrange
+    const expectedResult = "XXIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(29);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XL", when receive "40"`, () => {
+    // Arrange
+    const expectedResult = "XL";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(40);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XLV", when receive "45"`, () => {
+    // Arrange
+    const expectedResult = "XLV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(45);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "L", when receive "50"`, () => {
+    // Arrange
+    const expectedResult = "L";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(50);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "LIX", when receive "59"`, () => {
+    // Arrange
+    const expectedResult = "LIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(59);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "LX", when receive "60"`, () => {
+    // Arrange
+    const expectedResult = "LX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(60);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "LXXIV", when receive "74"`, () => {
+    // Arrange
+    const expectedResult = "LXXIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(74);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XC", when receive "90"`, () => {
+    // Arrange
+    const expectedResult = "XC";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(90);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "XCIX", when receive "99"`, () => {
+    // Arrange
+    const expectedResult = "XCIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(99);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "C", when receive "100"`, () => {
+    // Arrange
+    const expectedResult = "C";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(100);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CXII", when receive "112"`, () => {
+    // Arrange
+    const expectedResult = "CXII";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(112);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CXLVIII", when receive "148"`, () => {
+    // Arrange
+    const expectedResult = "CXLVIII";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(148);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CL", when receive "150"`, () => {
+    // Arrange
+    const expectedResult = "CL";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(150);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CC", when receive "200"`, () => {
+    // Arrange
+    const expectedResult = "CC";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(200);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CCCXCV", when receive "395"`, () => {
+    // Arrange
+    const expectedResult = "CCCXCV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(395);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CD", when receive "400"`, () => {
+    // Arrange
+    const expectedResult = "CD";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(400);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CDXLIV", when receive "444"`, () => {
+    // Arrange
+    const expectedResult = "CDXLIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(444);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "D", when receive "500"`, () => {
+    // Arrange
+    const expectedResult = "D";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(500);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "DC", when receive "600"`, () => {
+    // Arrange
+    const expectedResult = "DC";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(600);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CMXLVIII", when receive "948"`, () => {
+    // Arrange
+    const expectedResult = "CMXLVIII";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(948);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "CMXCIV", when receive "994"`, () => {
+    // Arrange
+    const expectedResult = "CMXCIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(994);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "M", when receive "1000"`, () => {
+    // Arrange
+    const expectedResult = "M";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(1000);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "MCDXLIV", when receive "1444"`, () => {
+    // Arrange
+    const expectedResult = "MCDXLIV";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(1444);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "MCMXCIX", when receive "1999"`, () => {
+    // Arrange
+    const expectedResult = "MCMXCIX";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(1999);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+
+  it(`it should return "MM", when receive "2000"`, () => {
+    // Arrange
+    const expectedResult = "MM";
+
+    // Act
+    const actualResult: string = convertToRomanNumerals(2000);
+
+    // Assert
+    expect(actualResult).toEqual(expectedResult);
+  });
+});
