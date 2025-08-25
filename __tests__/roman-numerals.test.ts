@@ -1,4 +1,4 @@
-import convertToRomanNumerals from "../roman-numerals";
+import convertToRomanNumerals from "../src/roman-numerals";
 
 describe("Roman Numerals", () => {
   it(`it should return "I", when receive "1"`, () => {
